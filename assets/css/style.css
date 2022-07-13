@@ -1,0 +1,478 @@
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-primary);
+}
+
+:root{
+    --color-primary: #36648B;
+    --color-secondary: white;
+    --color-accent: #F9F9F9; 
+    --color-twitter: #1D9BF0;
+
+    --text-grey: #646464;
+
+    --font-primary: 'Montserrat', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: unset;
+}
+ul{
+    list-style: none;
+}
+.cta{
+    border: 1px solid white;
+    padding: 20px 75px;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+}
+section{
+    margin: 5% 0;
+}
+.section-title{
+    text-align: center;
+    margin: 5% 0;
+}
+.section-title h6{
+    color: var(--text-grey);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+.section-title h1{
+    color: var(--color-primary);
+    font-size: 3.5rem;
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Navigation */
+
+nav{
+    width: 100%;
+    padding: 2% 10%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: transparent;
+    position: absolute;
+    color: var(--color-accent);
+}
+.nav-links{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.nav-links ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.nav-links ul li{
+    font-family: var(--font-primary);
+    font-size: 1.15rem;
+    margin: 0 25px;
+}
+
+/* Sidebar & Mobile Navigation */
+
+.burger{
+    position: fixed;
+    display: none;
+    right: 5%;
+    z-index: 2;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: var(--color-primary);
+    cursor: pointer;
+    z-index: 51;
+}
+.icon-burger{
+    width: 65%;
+    height: 65%;
+    margin: 17.5%;
+    color: white;
+    transition: all .7s ease;
+}
+.sidebar{
+    padding: 25px 0;
+    background: var(--color-primary);
+    position: fixed;
+    top: calc(100% + 10px);
+    width: 60%;
+    top: 0;
+    height: 100vh;
+    z-index: 50;
+    right: 0;
+    display: none; 
+    transform: translateX(100%);
+}
+.sidebar-links{
+    margin: 1% 0;
+    justify-content: center;
+    align-items: flex-end;
+    text-align: end;
+    margin-top: 15%;
+}
+.sidebar-links ul li{
+    font-family: var(--font-primary);
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    margin: 25px;
+}
+.sidebar-links ul li a{
+    color: var(--color-accent);
+}
+
+/* Hero Section */
+
+.hero{
+    width: 100%;
+    background-image: url('../img/consultant-banner.jpg');
+    background-size: cover;
+}
+.hero .hero-content{
+    width: 90%;
+    padding: 10% 0 23% 10%;
+    color: white;
+}
+.hero .hero-content h1{
+    font-size: 5rem;
+    width: 70%;
+}
+.hero .hero-content p{
+    margin: 20px 0 50px 0;
+    font-size: 1.6rem;
+    width: 45%;
+}
+.hero .hero-content .hero-cta{
+    width: 300px;
+    height: 75px;
+    text-align: center;
+}
+.hero .hero-content .hero-cta:hover{
+    background: var(--color-primary);
+    border-color: var(--color-primary); 
+    /* box-shadow: 0px 0px 10px 5px white; */
+}
+
+/* Hero Bottom */
+
+.hero-bottom{
+    position: relative;
+    top: -130px;
+    display: flex;
+    justify-content: space-between;
+}
+.hero-bottom-card{
+    width: 30%;
+    background: white;
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.148);
+}
+.hero-bottom-card h2{
+    margin: 10% 5%;
+    font-size: 1.9rem;
+    text-align: center;
+    color: var(--color-primary);
+}
+.hero-bottom-card p{
+    width: 80%;
+    font-size: 1.25rem;
+    color: var(--text-grey);
+    margin: 7.5% 10%;
+}
+
+/* About Section */
+
+/* About: Who am I */
+
+.about-container{
+    background: var(--color-accent);
+    display: flex;
+    align-items: center;
+    box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.15)
+}
+.about-container .about-content{
+    width: 65%;
+    padding: 0 10%;
+    display: flex;
+    flex-flow: column;
+}
+.about-container .about-content h1{
+    color: var(--color-primary);
+    font-size: 4rem;
+    margin-bottom: 3%;
+}
+.about-container .about-content p{
+    font-size: 1.25rem;
+    margin: 1% 0;
+    color: var(--text-grey);
+}
+#p-mb{
+    margin-bottom: 5%;
+}
+.about-container .about-content .about-cta{
+    border: 1px solid var(--color-primary);
+    color: var(--color-primary);
+    width: 300px;
+    font-size: 1.1rem;
+    text-align: center;
+
+}
+.about-container .about-content .about-cta:hover{
+    background: var(--color-primary);
+    color: var(--color-secondary);
+}
+.about-container .about-img-wrapper{
+    width: 35%;
+}
+.about-container .about-img-wrapper img{
+    width: 100%;
+}
+
+/* About: Experience */
+
+.experience-container{
+    width: 80%;
+    margin: 7.5% auto;
+    display: flex;
+    padding: 5% 10%;
+    background: var(--color-primary);
+    color: white;
+}
+.experience-container .experience-left{
+    width: 50%;
+    margin-right: 5%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+.experience-container .experience-left h1{
+    font-size: 3.5rem;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.experience-container .experience-left p{
+    margin: 3% 0;
+}
+.experience-container .experience-left #p-mb{
+    margin-bottom: 10%;
+}
+.experience-container .experience-left .exp-cta{
+    padding: 15px 75px;
+    width: 300px;
+    text-align: center;
+}
+.experience-container .experience-left .exp-cta:hover{
+    background: var(--color-secondary);
+    color: var(--color-primary);
+}
+.experience-container .experience-right{
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 5%;
+}
+.experience-container .experience-right .exp-card{
+    width: 45%;
+    margin: 2.5%;
+}
+.experience-container .experience-right .exp-card .exp-icon{
+    display: flex;
+    align-items: center;
+}
+.experience-container .experience-right .exp-card .exp-icon ion-icon{
+    width: 75px;
+    height: 75px;
+    margin-right: 20px;
+}
+.experience-container .experience-right .exp-card .exp-icon h3{
+    font-size: 2rem;
+}
+.experience-container .experience-right .exp-card h2{
+    font-size: 1.25rem;
+    margin: 5% 0;
+}
+#count-4{
+    transition: .1s ease-in-out;
+}
+
+/* Services */
+
+.services-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 5%;
+    width: 60%;
+}
+.services-container .service-card{
+    width: 300px;
+    background: white;
+    height: 300px;
+    cursor: default;
+    display: flex;
+    padding: 2.5%;
+    transition: .25s ease-in-out;
+    flex-flow: column;
+    box-shadow: 5px 5px 15px 0 rgba(100, 100, 100, 0.15)
+}
+.services-container .service-card:hover{
+    transform: scale(1.15);
+    z-index: 50;
+    border-bottom: 10px solid var(--color-primary);
+}
+.services-container .service-card h2{
+    color: var(--color-primary);
+    font-size: 2rem;
+    margin: 3% 0;
+}
+.services-container .service-card ion-icon{
+    width: 75px;
+    height: 75px;
+    color: var(--color-primary);
+}
+
+
+.service-cta{
+    text-align: center;
+    margin: 0 auto;
+}
+.service-cta .cta{
+    background: var(--color-primary);   
+    color: var(--color-secondary);
+    border: none;
+}
+.service-cta .cta:hover{
+    box-shadow: 0px 0px 2.5px 5px var(--color-primary);
+    font-weight: bold;
+}
+
+/* Twitter */
+
+.twitter-container{
+    background-image: url('../img/twitter-banner.jpg');
+    background-size: cover;
+    width: 100%;
+    position: relative;
+    z-index: 0;
+    font-family: var(--font-primary);
+}
+.container-darken{
+    display: none;
+    position: absolute;
+    background: #000;
+    opacity: 0.7;
+    width: 100%;
+    top: 0;
+    z-index: -1;
+    left: 0;
+    height: 100%;
+}
+.twitter-container .twitter-content{
+    width: 35%;
+    margin-left: 15%;
+    color: white;
+    padding: 5% 0;
+}
+.twitter-container .twitter-content h1{
+    font-size: 2rem;
+    margin: 1% 0;
+}
+.twitter-container .twitter-content p{
+    width: 80%;
+    margin-bottom: 5%;
+}
+.twitter-container .twitter-content a{
+    border: 1px solid white;
+    /* border-radius: 15px; */
+    padding: 15px 50px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.icon-twitter{
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+.twitter-container .twitter-content a:hover{
+    transition: all .25s ease-in-out;
+    background: white;
+    color: var(--color-twitter)
+}
+
+/* Contact */
+
+.contact-container{
+    display: flex;
+    width: 70%;
+    background: var(--color-accent);
+}
+.contact-container .contact-img-wrapper{
+    width: 35%;
+}
+.contact-container .contact-img-wrapper img{
+    width: 100%;
+}
+.contact-container h1{
+    font-size: 3rem;
+    margin: 2.5% 0;
+    color: var(--color-primary);
+}
+.contact-container .contact-form{
+    width: 65%;
+    text-align: center;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+.contact-container .contact-form form{
+    display: flex;
+    flex-flow: column;
+    width: 70%;
+    margin: 5% auto;
+}
+.contact-container .contact-form form input, .contact-container .contact-form form textarea{
+    font-size: 1.5rem;
+    margin: 2.5% auto;
+    background: transparent;
+    padding: 10px;
+    width: 90%;
+    resize: none;
+    border: none;
+    border-bottom: 2px solid var(--color-primary);
+    outline: none;
+}
+.contact-container .contact-form .contact-cta-container{
+    width: 65%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact-container .contact-form .contact-cta-container a{
+    width: 45%;
+    padding: 20px 0;
+    margin: 0 2.5%;
+    text-align: center;
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: var(--color-secondary);
+    background: var(--color-primary);
+}
+.contact-container .contact-form .contact-cta-container a:first-child{
+    background: green;
+}

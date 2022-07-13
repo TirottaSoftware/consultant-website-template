@@ -1,0 +1,281 @@
+@media screen and (min-width: 1366px) and (max-width: 1599px) {
+    .experience-container{
+        padding: 5%;
+    }
+    .experience-container .experience-right .exp-card .exp-icon ion-icon{
+        width: 50px;
+        height: 50px;
+    }
+    .services-container{
+        width: 70%;
+    }
+    .contact-container{
+        width: 80%;
+    }
+}
+@media screen and (min-width: 1200px) and (max-width: 1366px) {   
+    .experience-container .experience-right .exp-card .exp-icon ion-icon{
+        width: 40px;
+        height: 40px;
+    }
+    .experience-container .experience-right{
+        width: 60%;
+    }
+    .experience-container .experience-left{
+        width: 40%;
+    }
+    .experience-container .experience-left h1{
+        font-size: 2.45rem;
+    }
+    .experience-container .experience-right .exp-card p{
+        font-size: 0.9rem;
+    }
+    .services-container{
+        width: 80%;
+    }
+
+    .twitter-container .twitter-content{
+        width: 40%;
+    }
+    .contact-container{
+        width: 90%;
+    }
+}
+@media screen and (min-width: 991px) and (max-width: 1200px) {
+    .hero{
+        background-position: 40% 60%;
+    }
+    .hero .hero-content{
+        width: 100%;
+    }
+    .hero .hero-content h1{
+        width: 75%;
+    }
+    .hero .hero-content p{
+        width: 50%;
+    }
+
+    .about-container .about-content h1{
+        font-size: 3rem;
+    }
+    .about-container .about-content p{
+        font-size: 1.1rem;
+    }
+    .about-container .about-content .about-cta{
+        font-size: 1rem;
+    }
+    
+    .experience-container{
+        flex-flow: column;
+        align-items: center;
+        text-align: center;
+        padding: 5%;
+    }
+    .experience-container .experience-left, .experience-container .experience-right{
+        width: 100%;
+    }
+    .experience-container .experience-left{
+        align-items: center;
+        padding: 0 2.5%;
+        margin-bottom: 10%;
+    }
+    .experience-container .experience-right .exp-card .exp-icon{
+        justify-content: center;
+    }
+    
+    .services-container{
+        width: 90%;
+    }
+    .services-container .service-card{
+        width: 275px;
+        height: 275px;
+    }
+
+    .twitter-container .twitter-content{
+        width: 50%;
+    }
+
+    .contact-container{
+        width: 90%;
+    }
+    .contact-container .contact-img-wrapper{
+        width: 40%;
+    }
+    .contact-container .contact-form{
+        width: 60%;
+    }
+    .contact-container .contact-form .contact-cta-container{
+        width: 85%;
+    }
+    .contact-container .contact-form form{
+        width: 90%;
+    }
+    .contact-container .contact-form h1{
+        font-size: 2.5rem;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .nav-links ul{
+        display: none;
+    }
+    .nav-links{
+        position: relative;
+    }
+    .sidebar-transition{
+        transition: all .7s ease;
+    }
+    .sidebar-active{
+        transform: translateX(0);
+    }
+    .burger, .sidebar{
+        transition: all .7s ease;
+        display: block;
+    }
+    .burger-translated{
+        right: calc(60% - 20px);
+    }
+    
+    .section-title{
+        width: 90%;
+        margin: 10% auto;
+    }
+    .hero{
+        background-position: center;
+        height: 100%;
+    }
+    .hero .hero-content{
+        text-align: center;
+        display: flex;
+        flex-flow: column;
+        width: 90%;
+        padding: 0;
+        margin: 0 auto;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .hero .hero-content h1{
+        width: 90%;
+        margin: 0 auto;
+        font-size: 2.5rem;
+    }
+    .hero .hero-content p{
+        width: 70%;
+        font-size: 1.25rem;
+        margin: 5% 0;
+    }
+    .hero .hero-content .hero-cta{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 60px;
+        font-size: 1.15rem;
+    }
+    .hero-bottom{
+        top: 0;
+        width: 100%;
+        flex-flow: column;
+        align-items: center;
+    }
+    .hero-bottom .hero-bottom-card{
+        width: 90%;
+        margin: 5% 0;
+    }
+
+    .about-container{
+        flex-flow: column-reverse;
+    }
+    .about-container .about-img-wrapper{
+        width: 100%;
+    }
+    .about-container .about-content{
+        width: 100%;
+        text-align: center;
+        padding: 5% 10%;
+    }
+    .about-container .about-content h1{
+        font-size: 2.5rem;
+        margin-top: 5%;
+    }
+    .about-container .about-content .about-cta{
+        margin: 0 auto;
+    }
+
+    .experience-container{
+        flex-flow: column;
+        align-items: center;
+        text-align: center;
+        padding: 5%;
+    }
+    .experience-container .experience-left, .experience-container .experience-right{
+        width: 100%;
+    }
+    .experience-container .experience-left{
+        align-items: center;
+        padding: 0 2.5%;
+        margin-bottom: 10%;
+    }
+    .experience-container .experience-left h1{
+        font-size: 2.5rem;
+    }
+    .experience-container .experience-right .exp-card .exp-icon{
+        justify-content: center;
+    }
+    .experience-container .experience-right .exp-card .exp-icon ion-icon{
+        width: 50px;
+        height: 50px;
+    }
+
+    .services-container{
+        width: 90%;
+        margin-bottom: 15%;
+    }
+    .services-container .service-card{
+        width: 50%;
+        height: 250px;
+    }
+
+    .twitter-container{
+        background-position: right;
+        
+        margin-top: 15%;
+    }
+    .container-darken{
+        display: block;
+    }    
+    .twitter-container .twitter-content{
+        width: 75%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .twitter-container .twitter-content p{
+        margin: 20px auto;
+        width: 100%;
+    }
+    .twitter-container .twitter-content a{
+        margin: 0 auto;
+    }
+
+    .contact-container{
+        width: 80%;
+        margin: 20% auto;
+        flex-flow: column;
+        padding: 5% 0;
+    }
+    .contact-container .contact-img-wrapper{
+        display: none;
+    }
+    .contact-container .contact-form{
+        width: 100%;
+    }
+    .contact-container .contact-form .contact-cta-container{
+        width: 85%;
+    }
+    .contact-container .contact-form form{
+        width: 90%;
+    }
+    .contact-container .contact-form h1{
+        font-size: 2.5rem;
+    }
+}
